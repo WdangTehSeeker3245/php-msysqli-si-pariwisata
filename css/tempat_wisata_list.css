@@ -1,0 +1,15 @@
+.search-box{
+    padding-left:500px;
+    padding-right:500px;
+}
+
+@media (max-width:526px){
+    .nav-margin-mobile {
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .search-box{
+        padding-left:50px;
+        padding-right:50px;
+    }
+}

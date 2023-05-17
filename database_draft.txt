@@ -1,0 +1,32 @@
+CREATE TABLE member (
+	id_member INT NOT NULL AUTO_INCREMENT,
+	nama VARCHAR(255) NOT NULL,
+	alamat TEXT NOT NULL,
+	telepon VARCHAR(255) NOT NULL,
+	email VARCHAR(255) NOT NULL,
+	gambar TEXT,
+	PRIMARY KEY(id_member)
+)ENGINE=INNODB;
+
+CREATE TABLE login (
+	id_login INT NOT NULL AUTO_INCREMENT,
+	username VARCHAR(255) NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	id_member INT NOT NULL,
+	PRIMARY KEY(id_login),
+	FOREIGN KEY(id_member) REFERENCES member(id_member)
+)ENGINE=INNODB;
+
+CREATE TABLE tourism (
+	id_tourism INT NOT NULL AUTO_INCREMENT,
+	nama VARCHAR(255) NOT NULL,
+	alamat TEXT NOT NULL,
+	harga_tiket INT NOT NULL,
+	waktu_buka VARCHAR(20) NOT NULL,
+	rekomendasi VARCHAR(10) NOT NULL,
+	google_map TEXT NOT NULL,
+	short_desc VARCHAR(100) NOT NULL,
+	deskripsi TEXT NOT NULL,
+	gambar TEXT NOT NULL,
+    PRIMARY KEY(id_tourism)
+)ENGINE=INNODB;

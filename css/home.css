@@ -1,0 +1,39 @@
+.carousel-item {
+    height:38rem;
+    background:black;
+    color:white;
+    position:relative;
+}
+
+.con{
+    position:absolute;
+    bottom:180;
+    left:0;
+    right:0;
+    padding-bottom: 50px;
+}
+
+.overlay-image{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-position:center;
+    background-size:cover;
+    opacity:0.8;
+}
+
+@media (max-width:526px){
+    .nav-margin-mobile {
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .con{
+        position:absolute;
+        bottom:180;
+        left:0;
+        right:0;
+        padding-bottom: 50px;
+    }
+}
